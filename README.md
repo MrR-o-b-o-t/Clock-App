@@ -1,2 +1,0 @@
-# Mastermind-Course
-Mastermind Projects
