@@ -1,10 +1,39 @@
-let time = setInterval(timer, 0);
+/* Displays Standard Time */
 
-function timer() {
+let clock = setInterval(displayTime, 0);
+
+function getBaseTime() {
     let hms = new Date();
-    document.getElementById("time").innerHTML = hms.toLocaleTimeString();
+    return hms.toLocaleTimeString();
 }
 
+/* DISPLAYS MILITARY TIME */
+function getMilitaryTime() {
+    let militaryHours = new Date();
+    let newMilitaryHours = militaryHours.getHours();
+
+    let militaryMinutes = new Date();
+    let newMilitaryMinutes = militaryMinutes.getMinutes();
+
+    let militarySeconds = new Date();
+    let newMilitarySeconds = militarySeconds.getSeconds();
+
+    return newMilitaryHours + ":" + newMilitaryMinutes + ":" + newMilitarySeconds;
+}
+
+
+/* ALLOWS MILITARY AND STANDARD TIME TO BE TOGGLED */
+function displayTime() {
+    if (document.querySelector("#military-toggler input:checked")) {
+        document.getElementById("time").innerHTML = getMilitaryTime()
+    }
+    else {
+        document.getElementById("time").innerHTML = getBaseTime()
+    }
+}
+
+
+/* DISPLAYS DAY OF THE WEEK IN TEXT, MONTH, DATE, AND YEAR. */
 let setWeekday = new Date();
 let weekday = new Array(7);
 weekday[0] = "Sunday";
@@ -21,40 +50,21 @@ document.getElementById("weekday").innerHTML = n + " - "
 let d = new Date();
 let months =
     ["January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December"];
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"];
 document.getElementById("month").innerHTML = months[d.getMonth()];
 
 let getTodaysDate = new Date();
 document.getElementById("date").innerHTML = getTodaysDate.getDate() + ",";
 
-    let getFullYear = new Date();
-    document.getElementById("year").innerHTML = getFullYear.getFullYear();
-
-
-document.getElementById("millitary-toggler").addEventListener("click", millitaryTime);
-
-function millitaryTime() {
-    clearTimeout(time);
-
-    var millitaryHours = new Date();
-    var newMillitaryHours = millitaryHours.getHours();
-
-    var millitaryMinutes = new Date();
-    var newMillitaryMinutes = millitaryMinutes.getMinutes();
-
-    var millitarySeconds = new Date();
-    var newMillitarySeconds = millitarySeconds.getSeconds();
-
-    let millitaryTimer = setInterval(millitaryTime, 0);
-    document.getElementById("time").innerHTML = newMillitaryHours + ":" + newMillitaryMinutes + ":" + newMillitarySeconds;
-}
+let getFullYear = new Date();
+document.getElementById("year").innerHTML = getFullYear.getFullYear();
