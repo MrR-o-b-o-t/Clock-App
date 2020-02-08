@@ -7,7 +7,7 @@ Written entirely using pure Javascript, HTML and CSS_
 
 <br>
 
-<image src="images/digital-clock.png">
+<images src="images/digital-clock.png">
 
 ## Summary
 
