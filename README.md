@@ -7,7 +7,7 @@ Written entirely using pure Javascript, HTML and CSS_
 
 <br>
 
-See it [here](https://andysterks.github.io/JS-Tetris)
+See it [here](https://web-dev-jr.github.io/Clock-App/)
 
 <br>
 
