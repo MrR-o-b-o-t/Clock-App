@@ -8,7 +8,7 @@ Written entirely using pure Javascript, HTML and CSS_
 <br>
 See it [here](https://web-dev-jr.github.io/Clock-App/)
 <br>
-<images src="images./digital-clock.PNG">
+<images src="digital-clock.PNG">
   
 ## Summary
 
