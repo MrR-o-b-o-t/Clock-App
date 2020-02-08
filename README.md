@@ -7,6 +7,10 @@ Written entirely using pure Javascript, HTML and CSS_
 
 <br>
 
+See it [here](https://andysterks.github.io/JS-Tetris)
+
+<br>
+
 <images src="images/digital-clock.png">
 
 ## Summary
