@@ -6,13 +6,10 @@ _A digital clock app that display the current time, day , and date. Users can to
 Written entirely using pure Javascript, HTML and CSS_
 
 <br>
-
 See it [here](https://web-dev-jr.github.io/Clock-App/)
-
 <br>
-
 <images src="images/digital-clock.png">
-
+  
 ## Summary
 
 After learning the basics of HTML, CSS and Javascript I sought out a mentor to help me expand and refine my abilites. One of the first steps
